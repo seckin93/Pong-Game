@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Dec 26 08:23:22 2016
+# Process ID: 7132
+# Log file: F:/PongGameBasysButton/vivado.log
+# Journal file: F:/PongGameBasysButton\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/PongGameBasysButton/project_2.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Users/TEMP.PCLABS.001/Desktop/project_2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 26 08:24:14 2016...

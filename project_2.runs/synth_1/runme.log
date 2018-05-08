@@ -1,0 +1,365 @@
+
+*** Running vivado
+    with args -log pongGame.vds -m64 -mode batch -messageDb vivado.pb -notrace -source pongGame.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source pongGame.tcl -notrace
+Command: synth_design -top pongGame -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2016.12' and will expire in 5 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 248.051 ; gain = 69.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pongGame' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:22]
+INFO: [Synth 8-638] synthesizing module 'videoGen' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/videoGen.sv:22]
+INFO: [Synth 8-638] synthesizing module 'Ball' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Ball.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'Ball' (1#1) [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Ball.sv:1]
+WARNING: [Synth 8-689] width (10) of port connection 'left' does not match port width (32) of module 'Ball' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/videoGen.sv:30]
+WARNING: [Synth 8-689] width (10) of port connection 'top' does not match port width (32) of module 'Ball' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/videoGen.sv:30]
+INFO: [Synth 8-638] synthesizing module 'Paddle' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Paddle.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Paddle' (2#1) [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Paddle.sv:23]
+WARNING: [Synth 8-689] width (10) of port connection 'top' does not match port width (32) of module 'Paddle' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/videoGen.sv:33]
+WARNING: [Synth 8-689] width (10) of port connection 'top' does not match port width (32) of module 'Paddle' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/videoGen.sv:34]
+INFO: [Synth 8-256] done synthesizing module 'videoGen' (3#1) [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/videoGen.sv:22]
+INFO: [Synth 8-638] synthesizing module 'clockDivider' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/clockDivider.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider' (4#1) [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/clockDivider.sv:21]
+INFO: [Synth 8-638] synthesizing module 'VGAController' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/VGAController.sv:22]
+INFO: [Synth 8-256] done synthesizing module 'VGAController' (5#1) [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/VGAController.sv:22]
+WARNING: [Synth 8-387] label required on module instance [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:53]
+INFO: [Synth 8-638] synthesizing module 'ClockDivider5000' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/ClockDivider5000.sv:23]
+	Parameter D bound to: 500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockDivider5000' (6#1) [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/ClockDivider5000.sv:23]
+INFO: [Synth 8-638] synthesizing module 'SevSeg_4digit' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/SevSeg_4digit.sv:33]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SevSeg_4digit' (7#1) [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/SevSeg_4digit.sv:33]
+WARNING: [Synth 8-689] width (1) of port connection 'in1' does not match port width (4) of module 'SevSeg_4digit' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:120]
+WARNING: [Synth 8-689] width (1) of port connection 'in2' does not match port width (4) of module 'SevSeg_4digit' [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:120]
+WARNING: [Synth 8-3848] Net in1 in module/entity pongGame does not have driver. [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:120]
+WARNING: [Synth 8-3848] Net in2 in module/entity pongGame does not have driver. [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:120]
+INFO: [Synth 8-256] done synthesizing module 'pongGame' (8#1) [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 282.289 ; gain = 103.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin segment:in1[0] to constant 0 [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:120]
+WARNING: [Synth 8-3295] tying undriven pin segment:in2[0] to constant 0 [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/pongGame.sv:120]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 282.289 ; gain = 103.582
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/constrs_1/new/const.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 576.715 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Paddle.sv:26]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Paddle.sv:26]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Paddle.sv:26]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Paddle.sv:26]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Paddle.sv:26]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [D:/Users/TEMP.PCLABS.001/Desktop/project_2/project_2.srcs/sources_1/new/Paddle.sv:26]
+INFO: [Synth 8-5545] ROM "newClock" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outClk" won't be mapped to RAM because address size (19) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "dirY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dirY" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 4     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     10 Bit        Muxes := 2     
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pongGame 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     10 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module Paddle 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+Module videoGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+Module clockDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module VGAController 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+Module SevSeg_4digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "newClock" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "y" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "outClk" won't be mapped to RAM because address size (19) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "dirY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dirY" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 576.715 ; gain = 398.008
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-3332] Sequential element (\Paddle1_reg[0] ) is unused and will be removed from module pongGame.
+WARNING: [Synth 8-3332] Sequential element (\Paddle2_reg[0] ) is unused and will be removed from module pongGame.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 576.715 ; gain = 398.008
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    56|
+|3     |LUT1   |    79|
+|4     |LUT2   |    53|
+|5     |LUT3   |    39|
+|6     |LUT4   |    98|
+|7     |LUT5   |    42|
+|8     |LUT6   |    59|
+|9     |FDRE   |   118|
+|10    |FDSE   |    20|
+|11    |IBUF   |     5|
+|12    |OBUF   |    26|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+-----------------+------+
+|      |Instance         |Module           |Cells |
++------+-----------------+-----------------+------+
+|1     |top              |                 |   597|
+|2     |  clock          |clockDivider     |    80|
+|3     |  nolabel_line53 |ClockDivider5000 |    50|
+|4     |  segment        |SevSeg_4digit    |    56|
+|5     |  vgaCont        |VGAController    |   139|
+|6     |  videoGen       |videoGen         |    26|
+|7     |    paddle1      |Paddle           |    13|
+|8     |    paddle2      |Paddle_0         |    13|
++------+-----------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 576.715 ; gain = 398.008
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 576.715 ; gain = 87.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 576.715 ; gain = 398.008
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 576.715 ; gain = 382.840
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 576.715 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 26 08:12:17 2016...
